@@ -44,7 +44,7 @@ def itemLV(request):
         'object_list' : object,
         'name' : name
     }
-    return render(request=request,template_name='board/item_list.html',content = context)
+    return render(request=request,template_name='board/item_list.html',context = context)
 
 def test(request):
     return HttpResponse("요청 잘 받았어")
